@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>KeyMaster - Secure and Customizable</title>
+    <meta
+      name="description"
+      content="Generate strong and secure passwords with our advanced random password generator. Customize password length and character types to suit your needs."
+    />
+    <meta
+      name="keywords"
+      content="password generator, random password, secure password, password security, password length, character types, password customization"
+    />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <nav>
+        <div class="nav__logo">
+          <a href="/">
+            <img src="./assests/key.svg" alt="KeyMaster" />
+            <b>Master</b>
+          </a>
+        </div>
+        <div class="nav__link">
+          <a href="https://twitter.com/lokeshkavisth" target="_blank">
+            <img src="./assests/twitter.svg" alt="twitter" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <article>
+        <section class="hero__container">
+          <h1>
+            Generate Strong and Secure Passwords with Our Random Password
+            Generator
+          </h1>
+          <p>
+            Stay safe online by using our advanced random password generator to
+            create unique and secure passwords. KeyMaster uses state-of-the-art
+            encryption methods to ensure that your passwords are truly random
+            and difficult to crack. You can also customize password length and
+            character types, including special characters and numbers, to ensure
+            that your passwords meet the requirements of different websites and
+            applications. Protect your sensitive information and safeguard your
+            online identity with our powerful and user-friendly random password
+            generator (KeyMaster).
+          </p>
+        </section>
+
+        <section class="keymaster__container">
+          <form>
+            <label>
+              Password Length:
+              <input
+                type="number"
+                id="length-input"
+                min="8"
+                max="128"
+                value="16"
+              />
+            </label>
+
+            <label>
+              Include Lowercase:
+              <input type="checkbox" id="lowercase-checkbox" checked />
+            </label>
+
+            <label>
+              Include Uppercase:
+              <input type="checkbox" id="uppercase-checkbox" checked />
+            </label>
+
+            <label>
+              Include Numbers:
+              <input type="checkbox" id="numbers-checkbox" checked />
+            </label>
+
+            <label>
+              Include Special Characters:
+              <input type="checkbox" id="special-checkbox" checked />
+            </label>
+          </form>
+
+          <div class="button__container">
+            <button type="button" id="generate-button">Generate</button>
+            <button id="password-container">Click to copy password</button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      <p>crafted by lokesh</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
